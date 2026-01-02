@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    font-size: 22px;
+    line-height: 32px;
+    font-family: 'Open sans', sans-serif;
+}
+.toggle,[id=drop]{
+    display: none;
+}
+nav{
+    margin: 0;
+    padding: 0;
+    background-color: #01579b;
+}
+#logo{
+    display: block;
+    float: left;
+    color: white;
+    padding: 0 0 0 30px;
+}
+nav:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav ul{
+    float: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline-block;
+}
+nav a {
+    display: block;
+    padding: 28px 20px;
+    color: #fff;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: #3378af;
+}
+img.banner{
+    width: 100%;
+}
+@media (max-width: 768px){
+    #logo{
+        display: block;
+        width: 100%;
+        text-align: center;
+        float: none;
+        padding: 20px 0 10px;
+    }
+    nav ul li{
+        width: 100%;
+    }
+    .toggle + a,.menu{
+        display: none;
+    }
+    .toggle{
+        display: block;
+        background-color: #00457c;
+        padding: 14px 20px;
+        color: #fff;
+        font-size: 0.9em;
+        cursor: pointer;
+    }
+    .toggle:hover{
+        background-color: #003c6c;
+    }
+    [id=drop]:checked +ul{
+        display: block;
+    }
+}
