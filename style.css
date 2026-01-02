@@ -11,6 +11,8 @@ nav{
     margin: 0;
     padding: 0;
     background-color: #01579b;
+    position: sticky;
+    top:0;
 }
 #logo{
     display: block;
